@@ -1,0 +1,473 @@
+@charset "UTF-8";
+
+/*
+################################################################################
+page
+################################################################################
+*/
+body {
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  background-color: #f9f9f9;
+}
+h1, .mypageName {
+  font-size: 42px;
+}
+.registerForm p, .submitButton, h2, .deleteConfirmationText, .adminLink {
+  font-size: 24px;
+}
+.itemName, .resultDisplay .linkContainer p {
+  font-size: 20px;
+}
+.headerRightItem p, .footerList li, .link {
+  font-size: 16px;
+}
+.attentionIcon, .attentionText {
+  font-size: 14px;
+}
+.headerRightItem p, .footerList li, .itemName, h2,
+.deleteConfirmationText {
+  font-weight: bold;
+}
+.wrapper {
+  width: 640px;
+  height: auto;
+  margin: 80px auto 120px;
+  padding: 60px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 520px;
+  height: 40px;
+  background-color: #f9f9f9;
+  filter: brightness(98%);
+  font-size: 24px;
+}
+.submitButton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.submitButton input {
+  width: 200px;
+  height: 50px;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+  font-weight: bold;
+}
+.submitButton input:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+}
+.itemName {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+.attentionIcon {
+  padding: 2px 10px;
+  margin: auto 10px;
+  color: #f1efeb;
+  background-color: #ed2c08;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.attentionText {
+  color: red;
+  text-align: center;
+}
+.break {
+  display: none;
+}
+.linkContainer {
+  margin: 80px 0 40px;
+  color: #0000ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.linkContainer p {
+  margin-bottom: 5px;
+}
+.link {
+  text-decoration: underline;
+}
+.adminLink {
+  margin: 20px auto;
+  text-decoration: underline;
+  color: #0000ee;
+}
+/*
+################################################################################
+header.php
+################################################################################
+*/
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+.headerTop {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.headerLeft h1, .headerCenter h1 {
+  margin-top: 40px;
+}
+.headerLeft h1 {
+  color: #918379;
+}
+.headerLeft {
+  margin-left: 60px;
+}
+.headerCenter {
+  margin-left: 60px;
+}
+.headerRight {
+  display: flex;
+}
+.headerRightItem {
+  width: 80px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerRightItem img {
+  margin: 10px 0 10px;
+}
+.headerRightItem p {
+  text-align: center;
+  align-items: center;
+}
+.test {
+  width: 800px;
+  height: 400px;
+  border: 1px solid #000000;
+  margin: 80px auto;
+}
+/*
+################################################################################
+footer.php
+################################################################################
+*/
+.footer {
+  width: 100%;
+  height: auto;
+}
+.footerContainer {
+  height: 200px;
+  background-image: URL(/UDOtaskease/images/footer1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.copyright {
+  height: 40px;
+  color: #F9F9F9;
+  background-color: #4D3D35;
+  background-color: #918379;
+  text-align: center;
+  padding-top: 10px;
+}
+/*
+################################################################################
+index.php
+################################################################################
+*/
+.inputItem {
+  margin-bottom: 40px;
+  height: auto;
+}
+.inputItemTop, .inputItemBottom {
+  margin-bottom: 20px;
+}
+/*
+################################################################################
+login.php
+################################################################################
+*/
+.loginForm {
+  margin-bottom: 100px;
+}
+.loginForm h2, .signupForm h2 {
+  margin-bottom: 80px;
+}
+/*
+################################################################################
+register.php
+################################################################################
+*/
+.registerForm h2 {
+  margin-bottom: 80px;
+}
+/*
+################################################################################
+loginRegisterResult.php
+################################################################################
+*/
+.resultDisplay {
+  height: auto;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 40px 10px;
+  text-align: center;
+}
+.resultDisplay .linkContainer a {
+  margin-bottom: 40px;
+}
+/*
+################################################################################
+mypage.php
+################################################################################
+*/
+.mypageTop {
+  width: 100%;
+  height: 200px;
+  background-color: #5FB9BF;
+  margin-bottom: 10px;
+}
+.mypageBottom {
+  width: 100%;
+  height: auto;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+/*
+################################################################################
+adminPage.php
+################################################################################
+*/
+.adminWrapper {
+  width: 100%;
+  height: auto;
+  padding: 80px 40px;
+  text-align: center;
+}
+.adminWrapper label {
+  font-size: 20px;
+}
+.adminWrapper input {
+  width: 120px;
+  height: auto;
+  font-size: 42px;
+  text-align: center;
+  margin-right: 20px;
+}
+.adminWrapper .submitButton input {
+  height: 50px;
+  font-size: 24px;
+  margin: 20px;
+}
+.adminContainer {
+  padding: 80px 40px 40px;
+}
+.adminContainer p {
+  height: 50px;
+  font-size: 32px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 40px;
+}
+/*
+################################################################################
+editAccount.php
+################################################################################
+*/
+.editAccountItem {
+  margin-bottom: 80px;
+  height: auto;
+}
+.editAccountItem .attentionText {
+  margin: 20px 0;
+}
+.editAccountItem input {
+  margin-bottom: 40px;
+}
+/*
+################################################################################
+deleteConfirmation.php
+################################################################################
+*/
+.deleteConfirmationText {
+  margin: 40px 0 80px;
+}
+
+
+
+/*
+################################################################################
+@media/max-width: 768px
+################################################################################
+*/
+@media screen and (max-width: 768px) {
+  .headerLeft h1 {
+    display: none;
+  }
+  h1, .mypageName {
+    font-size: 24px;
+  }
+  h2, .deleteConfirmationText {
+    font-size: 20px;
+  }
+  .itemName {
+    font-size: 18px;
+  }
+  .editAccountItemTop p, .attentionIcon {
+    font-size: 16px;
+  }
+  .headerRightItem p, .footerList li {
+    font-size: 12px;
+  }
+  .headerRightItem p, .footerList li {
+    font-weight: bold;
+  }
+  .wrapper {
+    width: 325px;
+    padding: 40px 10px;
+  }
+  .break {
+    display: block;
+  }
+/*
+################################################################################
+header.php(768px)
+################################################################################
+*/
+  .headerTop {
+    padding: 10px;
+  }
+  .headerLeft {
+    margin: 0;
+  }
+  .headerLeft h1, .headerCenter h1 {
+    margin-top: 30px;
+  }
+  .headerCenter {
+    width: 200px;
+    margin-left: 0;
+  }
+  .headerCenter h1 {
+    width: 200px;
+    color: #918379;
+  }
+  .headerRight {
+    width: 160px;
+    margin-left: 20px;
+  }
+  .headerRightItem {
+    width: 65px;
+    margin: 0;
+  }
+  .headerRightItem img {
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 10px;
+  }
+/*
+################################################################################
+index.php(768px)
+################################################################################
+*/
+  .inputItemTop, .inputItemBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input {
+    width: 300px;
+  }
+/*
+################################################################################
+login.php(768px)
+################################################################################
+*/
+  .loginForm h2, .signupForm h2 {
+    font-size: 20px;
+  }
+  .loginForm {
+    margin-bottom: 120px;
+  }
+  .loginForm h2, .signupForm h2 {
+    margin-bottom: 40px;
+  }
+/*
+/*
+################################################################################
+register.php(768px)
+################################################################################
+*/
+/*
+################################################################################
+mypage.php(768px)
+################################################################################
+*/
+  .mypageTop {
+    width: 100%;
+    height: 200px;
+    background-color: #5FB9BF;
+    margin-bottom: 10px;
+  }
+  .mypageBottom {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+  }
+/*
+################################################################################
+adminPage.php(768px)
+################################################################################
+*/
+.adminWrapper {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  text-align: center;
+}
+.adminWrapper label {
+  font-size: 20px;
+}
+.adminWrapper input {
+  width: 60px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.adminWrapper .submitButton input {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+.adminWrapper .linkContainer .link {
+  font-size: 20px;
+}
+.adminContainer {
+  padding: 40px 20px 20px;
+}
+.adminContainer p {
+  font-size: 20px;
+}
+/*
+################################################################################
+editAccount.php(768px)
+################################################################################
+*/
+  .editAccountItem {
+    margin-bottom: 80px;
+    height: auto;
+  }
+  .editAccountItemTop p {
+    width: 100%;
+    height: 30px;
+  }
+}
